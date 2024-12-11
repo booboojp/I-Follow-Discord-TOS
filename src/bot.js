@@ -1,4 +1,4 @@
-const { Client, Guild, GuildMember } = require('discord.js-selfbot-v13');
+const { Client } = require('discord.js-selfbot-v13');
 const Logger = require('./util/logger.js');
 const kickAll = require('./commands/kickAll');
 const banAll = require('./commands/banAll');
